@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Toggle Switch</title>
+  <link href="toggle_select.css" media="screen" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    /* Styling for the toggles ... using iPhone-like images */
+    span.toggle_switch span.toggle_on,
+    span.toggle_switch span.toggle_on_side {
+      background:url(toggle_on.png) no-repeat top left;
+      color:white;
+    }
+    span.toggle_switch span.toggle_off,
+    span.toggle_switch span.toggle_off_side {
+      background:url(toggle_off.png) no-repeat top right;
+    }
+    span.toggle_switch span.toggle_button {
+      background:url(toggle_button.png) no-repeat top left;
+      cursor:pointer;
+    }
+  </style>
+  
+  <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js'></script>
+  <script type="text/javascript" src='jquery-ui.js'></script>
+  <script type="text/javascript" src='jquery.toggle_select.js'></script>
+  <script type="text/javascript">
+    j$ = jQuery.noConflict();
+    
+    j$(document).ready(function() {
+      j$("select.toggle").toggle_select();
+    });
+  </script>
+</head>
+<body>
+  <select class='toggle'><option value='1'>AAA</option><option value='2' selected='selected'>BBB</option></select>
+  <select class='toggle'><option value='1'>Yes</option><option value='2' selected='selected'>No</option></select>
+</body>
+</html>

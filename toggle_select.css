@@ -1,0 +1,35 @@
+span.toggle_switch {
+  position:relative;
+  display:inline-block;
+  overflow:hidden;
+}
+span.toggle_switch select {
+  display:none;
+}
+span.toggle_switch span.switch {
+  position:absolute;
+  display:block;
+  height:100%;
+}
+span.toggle_switch span.toggle_on_side,
+span.toggle_switch span.toggle_off_side {
+  position:absolute;
+  display:block;
+  z-index:1;
+  width:4px;
+  height:100%;
+  top:0px;
+  left:0px;
+}
+span.toggle_switch .switch span {
+  display:block;
+  float:left;
+  text-align:center;
+}
+span.toggle_switch span.toggle_button {
+  position:relative;
+  z-index:2;
+  height:100%;
+  margin:0px;
+  padding:0px;
+}
