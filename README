@@ -1,0 +1,21 @@
+iPhone-like Toggle Select
+
+Requires:
+ - jQuery
+ - jQuery UI with at least draggables
+ 
+Examples (View the 'toggle.html' or 'jquery.toggle_select.js' for more info):
+  jQuery("select").toggle_select(); // Replaces all select inputs with a toggle.
+  
+Options:
+  jQuery.fn.toggle_select.defaults = {
+    width        : 80,      // Width of entire toggle
+		height       : 27,      // Height of entire toggle
+		switch_width : 39,      // Width of the switch between the two options
+		inner_margin : -3,      // The margin between each option and the switch in the middle
+    on           : false,   // Whether the toggle is initially set to on
+    speed        : 100      // Speed of the toggle animation
+  };
+  
+Demo:
+  Pull everything from this repository and open 'toggle.html' in a browser.
